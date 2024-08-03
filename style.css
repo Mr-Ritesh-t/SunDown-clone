@@ -1,0 +1,194 @@
+@font-face {
+    font-family: neu;
+    src: url(./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: face;
+    src: url(/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: neu; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: face;
+    justify-content: space-between;
+}
+
+#nav_part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav_part2 h4 {
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.149);
+    border-radius: 50px;
+    font-weight: 400;
+    font-family: face;
+    color: black;
+    transition: all ease 0.4s;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#nav_part2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+
+}
+
+#nav_part2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav_part2 h4 a {
+    color: black;
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+}
+
+#nav_part2 h4:hover a {
+    color: white;
+}
+
+#center {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: neu;
+    color: black;
+    border-bottom: 1px solid #D8D3CD;
+    padding-bottom: 2.5vw;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.6vw;
+    line-height: 2vw;
+}
+
+#right h1 {
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
+
+}
+
+#page1 video {
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 4vw;
+    position: relative;
+
+}
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    background-color: #FE330A;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    right: 0;
+    top: 85vh;
+    filter: blur(20px);
+
+}
+
+#hero1 {
+    background-color: FE330A;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero2 {
+    background: linear-gradient(#FE330A,#f46105f0) ;
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+#hero3 {
+    background: linear-gradient(#FE330A,#f46105f0) ;
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(-30%, 10%);
+    }
+
+    to {
+        transform: translate(-20%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(-10%, 10%);
+    }
+
+    to {
+        transform: translate(30%, -10%);
+    }
+}

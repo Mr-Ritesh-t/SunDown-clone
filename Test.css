@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy'; 
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 50px;
+
+}
+#hero1{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+    filter:blur(20px);
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+#hero2{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    background-color: #FE330A;
+    filter:blur(20px);
+}
+
+@keyframes anime {
+    from{
+        transform: translate(-10%,-10%);
+    }
+    to{
+        transform: translate(10%,10%);
+    }
+    
+}
