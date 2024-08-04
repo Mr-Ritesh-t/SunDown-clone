@@ -192,3 +192,30 @@ nav {
         transform: translate(30%, -10%);
     }
 }
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    font-family: neu;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+#moving-text{
+    white-space: nowrap;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+}
+#moving-text h1{
+    font-size: 9vw;
+    display: inline-block;
+}
+#gola{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #FE330A;
+    display: inline-block;
+}
