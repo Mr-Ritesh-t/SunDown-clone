@@ -145,7 +145,7 @@ nav {
 }
 
 #hero2 {
-    background: linear-gradient(#FE330A,#f46105f0) ;
+    background: linear-gradient(#FE330A, #f46105f0);
     position: absolute;
     height: 30vw;
     width: 30vw;
@@ -160,7 +160,7 @@ nav {
 }
 
 #hero3 {
-    background: linear-gradient(#FE330A,#f46105f0) ;
+    background: linear-gradient(#FE330A, #f46105f0);
     position: absolute;
     height: 30vw;
     width: 30vw;
@@ -199,23 +199,36 @@ nav {
     font-family: neu;
     background-color: #EFEAE3;
     position: relative;
-    padding: 0 2vw;
+    padding: 8vw;
+
 }
-#moving-text{
+
+#moving-text {
+    overflow-x: auto;
     white-space: nowrap;
 }
-.con{
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    display: none;
+}
+
+.con {
     white-space: nowrap;
     display: inline-block;
 }
-#moving-text h1{
+
+#moving-text h1 {
     font-size: 9vw;
     display: inline-block;
 }
-#gola{
+
+#gola {
     height: 70px;
     width: 70px;
     border-radius: 50%;
     background-color: #FE330A;
     display: inline-block;
+    margin: 1vw 2vw;
 }
