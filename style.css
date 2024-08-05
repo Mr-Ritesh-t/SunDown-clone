@@ -4,7 +4,19 @@
 }
 
 @font-face {
-    font-family: face;
+    font-family: neu;
+    font-weight: 10;
+    src: url(/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayThin.ttf);
+}
+@font-face {
+    font-family: neu;
+    font-weight: 200;
     src: url(/neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayRoman.ttf);
 }
 
@@ -12,7 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: neu; */
+    font-family: neu;
 }
 
 html,
@@ -34,7 +46,7 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    font-family: face;
+    /* font-family: face; */
     justify-content: space-between;
 }
 
@@ -48,8 +60,7 @@ nav {
     padding: 10px 20px;
     border: 1px solid rgba(0, 0, 0, 0.149);
     border-radius: 50px;
-    font-weight: 400;
-    font-family: face;
+    font-weight: 10;
     color: black;
     transition: all ease 0.4s;
     font-size: 18px;
@@ -93,7 +104,7 @@ nav {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    font-family: neu;
+    /* font-family: neu; */
     color: black;
     border-bottom: 1px solid #D8D3CD;
     padding-bottom: 2.5vw;
@@ -199,7 +210,7 @@ nav {
     font-family: neu;
     background-color: #EFEAE3;
     position: relative;
-    padding: 8vw;
+    padding: 8vw 0;
 
 }
 
@@ -211,12 +222,16 @@ nav {
 #moving-text::-webkit-scrollbar {
     display: none;
     visibility: hidden;
-    display: none;
 }
 
 .con {
     white-space: nowrap;
     display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
 
 #moving-text h1 {
@@ -232,3 +247,44 @@ nav {
     display: inline-block;
     margin: 1vw 2vw;
 }
+
+    @keyframes move {
+      from {
+            transform: translateX(0);
+        }
+    
+        to {
+            transform:translateX(-100%);
+        }
+    }
+    
+    #page2-bottom{
+        height: 80vh;
+        width: 100%;
+        padding: 4.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #page2-bottom h1{
+        font-size: 4vw;
+        width: 60%;
+        line-height: 4vw;
+        
+    }
+    
+    #bottom-part2{
+        width: 20%;
+    }
+
+    #bottom-part2 img{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    #bottom-part2 p{
+        font-weight: 200;
+        margin-top: 2vw;
+        font-size: 1vw;
+    }
