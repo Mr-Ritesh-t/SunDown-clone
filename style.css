@@ -1085,4 +1085,46 @@ nav h3{
      background-color: #000;
      z-index: 999;
      position: fixed;
+     top: 0;
+     transition: all ease 0.5s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#loader h1{
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to left,#FE330A, rgb(255, 115, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
 }

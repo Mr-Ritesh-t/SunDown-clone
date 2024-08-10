@@ -40,3 +40,8 @@ var full = document.querySelector("#full-scr")
 menu.addEventListener("click", function(){
     full.style.top = 0
 })
+
+var loader = document.querySelector("#loader")
+setTimeout(function(){
+    loader.style.top = "-100%"
+},4000)
